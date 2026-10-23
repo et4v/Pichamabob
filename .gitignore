@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# PlatformIO
+.pio/
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+
+# .NET
+bin/
+obj/
+.vs/
+*.user
+
+# Secrets — never commit these
+.env
