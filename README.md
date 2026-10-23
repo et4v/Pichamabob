@@ -40,6 +40,8 @@ Each folder has its own README with setup steps.
 
 ## Team
 
+![Presenting Pichamabob at HackMT 2026](docs/team-at-hackmt.jpg)
+
 | Area | People |
 |---|---|
 | iOS app | Allison O'Brien, Madeleine Butuli |
