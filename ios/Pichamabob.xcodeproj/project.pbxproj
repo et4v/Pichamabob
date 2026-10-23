@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		3625A2F32F2DF4DB00AE9EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3625A2D62F2DF4D800AE9EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3625A2DD2F2DF4D800AE9EBF;
+			remoteInfo = Pichamabob;
+		};
+		3625A2FD2F2DF4DB00AE9EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3625A2D62F2DF4D800AE9EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3625A2DD2F2DF4D800AE9EBF;
+			remoteInfo = Pichamabob;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3625A2DE2F2DF4D800AE9EBF /* Pichamabob.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pichamabob.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3625A2F22F2DF4DB00AE9EBF /* PichamabobTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PichamabobTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3625A2FC2F2DF4DB00AE9EBF /* PichamabobUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PichamabobUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3625A3042F2DF4DB00AE9EBF /* Exceptions for "Pichamabob" folder in "Pichamabob" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3625A2DD2F2DF4D800AE9EBF /* Pichamabob */;
+		};
+		3625A3112F2DF5FB00AE9EBF /* Exceptions for "PichamabobUITests" folder in "PichamabobUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3625A2FB2F2DF4DB00AE9EBF /* PichamabobUITests */;
+		};
+		3625A3162F2DF64700AE9EBF /* Exceptions for "Pichamabob" folder in "PichamabobTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BLEManager.swift,
+				ContentView.swift,
+			);
+			target = 3625A2F12F2DF4DB00AE9EBF /* PichamabobTests */;
+		};
+		3625A3172F2DF64700AE9EBF /* Exceptions for "Pichamabob" folder in "PichamabobUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				BLEManager.swift,
+				ContentView.swift,
+			);
+			target = 3625A2FB2F2DF4DB00AE9EBF /* PichamabobUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3625A2E02F2DF4D800AE9EBF /* Pichamabob */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3625A3042F2DF4DB00AE9EBF /* Exceptions for "Pichamabob" folder in "Pichamabob" target */,
+				3625A3162F2DF64700AE9EBF /* Exceptions for "Pichamabob" folder in "PichamabobTests" target */,
+				3625A3172F2DF64700AE9EBF /* Exceptions for "Pichamabob" folder in "PichamabobUITests" target */,
+			);
+			path = Pichamabob;
+			sourceTree = "<group>";
+		};
+		3625A2F52F2DF4DB00AE9EBF /* PichamabobTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PichamabobTests;
+			sourceTree = "<group>";
+		};
+		3625A2FF2F2DF4DB00AE9EBF /* PichamabobUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3625A3112F2DF5FB00AE9EBF /* Exceptions for "PichamabobUITests" folder in "PichamabobUITests" target */,
+			);
+			path = PichamabobUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3625A2DB2F2DF4D800AE9EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625A2EF2F2DF4DB00AE9EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625A2F92F2DF4DB00AE9EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3625A2D52F2DF4D800AE9EBF = {
+			isa = PBXGroup;
+			children = (
+				3625A2E02F2DF4D800AE9EBF /* Pichamabob */,
+				3625A2F52F2DF4DB00AE9EBF /* PichamabobTests */,
+				3625A2FF2F2DF4DB00AE9EBF /* PichamabobUITests */,
+				3625A2DF2F2DF4D800AE9EBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3625A2DF2F2DF4D800AE9EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3625A2DE2F2DF4D800AE9EBF /* Pichamabob.app */,
+				3625A2F22F2DF4DB00AE9EBF /* PichamabobTests.xctest */,
+				3625A2FC2F2DF4DB00AE9EBF /* PichamabobUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3625A2DD2F2DF4D800AE9EBF /* Pichamabob */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3625A3052F2DF4DB00AE9EBF /* Build configuration list for PBXNativeTarget "Pichamabob" */;
+			buildPhases = (
+				3625A2DA2F2DF4D800AE9EBF /* Sources */,
+				3625A2DB2F2DF4D800AE9EBF /* Frameworks */,
+				3625A2DC2F2DF4D800AE9EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3625A2E02F2DF4D800AE9EBF /* Pichamabob */,
+			);
+			name = Pichamabob;
+			packageProductDependencies = (
+			);
+			productName = Pichamabob;
+			productReference = 3625A2DE2F2DF4D800AE9EBF /* Pichamabob.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3625A2F12F2DF4DB00AE9EBF /* PichamabobTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3625A30A2F2DF4DB00AE9EBF /* Build configuration list for PBXNativeTarget "PichamabobTests" */;
+			buildPhases = (
+				3625A2EE2F2DF4DB00AE9EBF /* Sources */,
+				3625A2EF2F2DF4DB00AE9EBF /* Frameworks */,
+				3625A2F02F2DF4DB00AE9EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3625A2F42F2DF4DB00AE9EBF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3625A2F52F2DF4DB00AE9EBF /* PichamabobTests */,
+			);
+			name = PichamabobTests;
+			packageProductDependencies = (
+			);
+			productName = PichamabobTests;
+			productReference = 3625A2F22F2DF4DB00AE9EBF /* PichamabobTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3625A2FB2F2DF4DB00AE9EBF /* PichamabobUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3625A30D2F2DF4DB00AE9EBF /* Build configuration list for PBXNativeTarget "PichamabobUITests" */;
+			buildPhases = (
+				3625A2F82F2DF4DB00AE9EBF /* Sources */,
+				3625A2F92F2DF4DB00AE9EBF /* Frameworks */,
+				3625A2FA2F2DF4DB00AE9EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3625A2FE2F2DF4DB00AE9EBF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3625A2FF2F2DF4DB00AE9EBF /* PichamabobUITests */,
+			);
+			name = PichamabobUITests;
+			packageProductDependencies = (
+			);
+			productName = PichamabobUITests;
+			productReference = 3625A2FC2F2DF4DB00AE9EBF /* PichamabobUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3625A2D62F2DF4D800AE9EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					3625A2DD2F2DF4D800AE9EBF = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					3625A2F12F2DF4DB00AE9EBF = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 3625A2DD2F2DF4D800AE9EBF;
+					};
+					3625A2FB2F2DF4DB00AE9EBF = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 3625A2DD2F2DF4D800AE9EBF;
+					};
+				};
+			};
+			buildConfigurationList = 3625A2D92F2DF4D800AE9EBF /* Build configuration list for PBXProject "Pichamabob" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3625A2D52F2DF4D800AE9EBF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3625A2DF2F2DF4D800AE9EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3625A2DD2F2DF4D800AE9EBF /* Pichamabob */,
+				3625A2F12F2DF4DB00AE9EBF /* PichamabobTests */,
+				3625A2FB2F2DF4DB00AE9EBF /* PichamabobUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3625A2DC2F2DF4D800AE9EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625A2F02F2DF4DB00AE9EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625A2FA2F2DF4DB00AE9EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3625A2DA2F2DF4D800AE9EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625A2EE2F2DF4DB00AE9EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3625A2F82F2DF4DB00AE9EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3625A2F42F2DF4DB00AE9EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3625A2DD2F2DF4D800AE9EBF /* Pichamabob */;
+			targetProxy = 3625A2F32F2DF4DB00AE9EBF /* PBXContainerItemProxy */;
+		};
+		3625A2FE2F2DF4DB00AE9EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3625A2DD2F2DF4D800AE9EBF /* Pichamabob */;
+			targetProxy = 3625A2FD2F2DF4DB00AE9EBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3625A3062F2DF4DB00AE9EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pichamabob/Pichamabob.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pichamabob/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.Pichamabob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3625A3072F2DF4DB00AE9EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pichamabob/PichamabobRelease.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pichamabob/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.Pichamabob;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3625A3082F2DF4DB00AE9EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3625A3092F2DF4DB00AE9EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3625A30B2F2DF4DB00AE9EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.PichamabobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pichamabob.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pichamabob";
+			};
+			name = Debug;
+		};
+		3625A30C2F2DF4DB00AE9EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.PichamabobTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pichamabob.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pichamabob";
+			};
+			name = Release;
+		};
+		3625A30E2F2DF4DB00AE9EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PichamabobUITests/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.PichamabobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pichamabob;
+			};
+			name = Debug;
+		};
+		3625A30F2F2DF4DB00AE9EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5YLPKYH7KU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PichamabobUITests/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Emily.PichamabobUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pichamabob;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3625A2D92F2DF4D800AE9EBF /* Build configuration list for PBXProject "Pichamabob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3625A3082F2DF4DB00AE9EBF /* Debug */,
+				3625A3092F2DF4DB00AE9EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3625A3052F2DF4DB00AE9EBF /* Build configuration list for PBXNativeTarget "Pichamabob" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3625A3062F2DF4DB00AE9EBF /* Debug */,
+				3625A3072F2DF4DB00AE9EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3625A30A2F2DF4DB00AE9EBF /* Build configuration list for PBXNativeTarget "PichamabobTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3625A30B2F2DF4DB00AE9EBF /* Debug */,
+				3625A30C2F2DF4DB00AE9EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3625A30D2F2DF4DB00AE9EBF /* Build configuration list for PBXNativeTarget "PichamabobUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3625A30E2F2DF4DB00AE9EBF /* Debug */,
+				3625A30F2F2DF4DB00AE9EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3625A2D62F2DF4D800AE9EBF /* Project object */;
+}
