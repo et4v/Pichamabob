@@ -49,3 +49,14 @@ Each folder has its own README with setup steps.
 | Backend | James Nguyen ([@jtnguyen3](https://github.com/jtnguyen3)), Jackson Reed ([@j9cks](https://github.com/j9cks)) |
 
 Built at HackMT, January 31 – February 1, 2026.
+
+## About this repo
+
+During the hackathon, none of us really knew how to use GitHub yet. The code ended up spread
+across several personal repos, laptops and files that were never committed, and the working
+demo was never all in one place.
+
+This repo was put together afterward, in October 2026, so there's a record of the project.
+The code is what ran at the demo. Unused leftovers were removed and passwords were kept out,
+but nothing was rewritten. The backend originally lived at
+[jtnguyen3/hackMT11](https://github.com/jtnguyen3/hackMT11).
