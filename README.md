@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/baseball.png" alt="A baseball" width="180">
-</p>
-
 # Pichamabob
 
 ![Pichamabob HackMT 2026 poster](docs/poster.png)
