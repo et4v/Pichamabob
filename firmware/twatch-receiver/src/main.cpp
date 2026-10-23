@@ -31,7 +31,7 @@ void receiverLoop();
 Module radioModule(LORA_CS, LORA_DIO1, LORA_RST, LORA_BUSY);
 SX1262 radio(&radioModule);
 
-// TFT pins from box
+// TFT display pins (T-Watch S3 screen)
 #define TFT_MOSI  13
 #define TFT_SCLK  18
 #define TFT_CS    12
@@ -68,7 +68,7 @@ void setup() {
     tft.fillScreen(ST77XX_BLACK);
     delay(500);
 
-    // Try different things to see what works
+    // Flash red, then blue, so you can see the screen is working
     Serial.println("Fill screen RED...");
     tft.fillScreen(ST77XX_RED);
     delay(1000);

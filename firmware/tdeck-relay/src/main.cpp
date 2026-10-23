@@ -1,3 +1,6 @@
+// t deck relay
+// takes whatever the phone sends over ble and pushes it out over lora to the watch
+
 #include <Arduino.h>
 #include <SPI.h>
 #include <RadioLib.h>
@@ -8,21 +11,23 @@
 
 #include "ble_state.h"
 
-// T-Deck Plus peripherals that share the LoRa SPI bus
+// these share the spi bus with the lora radio
+// if any of them are still selected the radio wont answer
+// poweron has to go high or nothing on the board gets power
 #define BOARD_POWERON     10
 #define BOARD_TFT_CS      12
 #define BOARD_SDCARD_CS   39
 
-// Must match iOS app
+// the ios app looks for exactly these
+// if they change here they have to change in BLEManager swift too
 #define SERVICE_UUID          "19B10000-E8F2-537E-4F6C-D104768A1214"
 #define SIGNAL_CHARACTERISTIC "19B10001-E8F2-537E-4F6C-D104768A1214"
 
 BLEServer* pServer = nullptr;
 BLECharacteristic* pSignalCharacteristic = nullptr;
 
-// ============================================================
-// LoRa Radio Config — MUST MATCH ON BOTH DEVICES
-// ============================================================
+// lora settings
+// these have to match the watch exactly or it just hears nothing
 #define LORA_FREQUENCY    915.0
 #define LORA_BANDWIDTH    125.0
 #define LORA_SPREAD_FACT  9
@@ -31,21 +36,18 @@ BLECharacteristic* pSignalCharacteristic = nullptr;
 #define LORA_TX_POWER     14
 #define LORA_PREAMBLE     8
 
-// ============================================================
-// LoRa radio object
-// ============================================================
+// the sx1262 radio
+// pins come from platformio ini so this file doesnt care which board it is
 Module radioModule(LORA_CS, LORA_DIO1, LORA_RST, LORA_BUSY);
 SX1262 radio(&radioModule);
 
-// ============================================================
-// Non-blocking status print timer (so BLE doesn’t get starved)
-// ============================================================
+// print status once a second without blocking
+// if we used a big delay here ble would get starved and drop the phone
 unsigned long lastStatusPrint = 0;
 const unsigned long STATUS_INTERVAL_MS = 1000;
 
-// ============================================================
-// LoRa state flag (don’t hard-freeze the whole device on failure)
-// ============================================================
+// remembers if lora came up
+// if it didnt we keep running so ble still works and we can see whats wrong
 static bool loraOk = false;
 
 void setupBLE() {
@@ -59,7 +61,8 @@ void setupBLE() {
 
   BLEService* pService = pServer->createService(SERVICE_UUID);
 
-  // IMPORTANT: include WRITE_NR for iOS writeWithoutResponse
+  // the app sends with write without response
+  // so WRITE_NR has to be here or ios never actually delivers anything
   pSignalCharacteristic = pService->createCharacteristic(
     SIGNAL_CHARACTERISTIC,
     BLECharacteristic::PROPERTY_WRITE |
@@ -77,12 +80,14 @@ void setupBLE() {
 void setupLoRa() {
   Serial.println("[LoRa] Pre-init...");
 
-  // ---- T-Deck needs POWERON and every other SPI device deselected ----
+  // turn on the t deck peripheral power rail
+  // without this the lora chip is effectively dead
   Serial.println("[LoRa] Powering peripherals (BOARD_POWERON)...");
   pinMode(BOARD_POWERON, OUTPUT);
   digitalWrite(BOARD_POWERON, HIGH);
   delay(200);
 
+  // deselect everything else on the shared bus so only the radio is listening
   Serial.println("[LoRa] Deselecting TFT + SD + LoRa (shared SPI bus)...");
   pinMode(BOARD_TFT_CS, OUTPUT);
   digitalWrite(BOARD_TFT_CS, HIGH);
@@ -94,7 +99,7 @@ void setupLoRa() {
   digitalWrite(LORA_CS, HIGH);
   delay(50);
 
-  // ---- Hardware reset the SX1262 ----
+  // reset the radio so it starts from a known state
   Serial.println("[LoRa] Hardware reset SX1262...");
   pinMode(LORA_RST, OUTPUT);
   digitalWrite(LORA_RST, LOW);
@@ -102,15 +107,15 @@ void setupLoRa() {
   digitalWrite(LORA_RST, HIGH);
   delay(200);
 
-  // ---- Start SPI with the pins you set ----
+  // the radio is not on the default spi pins so we have to give them explicitly
   Serial.println("[LoRa] Starting SPI...");
   SPI.begin(LORA_SPI_SCK, LORA_SPI_MISO, LORA_SPI_MOSI);
 
-  // Keep CS high until RadioLib starts talking
+  // keep cs high until radiolib is ready to talk to it
   digitalWrite(LORA_CS, HIGH);
   delay(10);
 
-  // ---- Init SX1262 ----
+  // bring up the radio with the shared settings
   Serial.println("[LoRa] Initializing SX1262...");
   int state = radio.begin(
     LORA_FREQUENCY, LORA_BANDWIDTH, LORA_SPREAD_FACT,
@@ -128,6 +133,8 @@ void setupLoRa() {
     return;
   }
 
+  // dio2 controls the rf switch on this board
+  // crc lets the watch throw away packets that got mangled
   radio.setCurrentLimit(60.0);
   radio.setDio2AsRfSwitch(true);
   radio.setCRC(2);
@@ -150,7 +157,7 @@ void setup() {
 }
 
 void loop() {
-  // 1) Non-blocking status print
+  // status line so we can watch it in the serial monitor
   if (millis() - lastStatusPrint >= STATUS_INTERVAL_MS) {
     lastStatusPrint = millis();
     Serial.print("STATE=");
@@ -161,7 +168,8 @@ void loop() {
     Serial.println(loraOk ? "OK" : "FAIL");
   }
 
-  // 2) When BLE writes, send that exact string over LoRa
+  // when the phone writes something send that exact text over lora
+  // the flag gets cleared first so we only send each message once
   if (messageReceived) {
     messageReceived = false;
 
@@ -182,7 +190,6 @@ void loop() {
     }
   }
 
-
-  // 3) Give BLE stack time
+  // tiny pause so the ble stack gets time to run
   delay(1);
 }
