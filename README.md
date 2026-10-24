@@ -47,8 +47,13 @@ Each folder has its own README with setup steps.
 | iOS app | Allison O'Brien, Madeleine Butuli |
 | Firmware | Emily Tew ([@et4v](https://github.com/et4v)), Rachel Bell ([@bell-rachel](https://github.com/bell-rachel)) |
 | Backend | James Nguyen ([@jtnguyen3](https://github.com/jtnguyen3)), Jackson Reed ([@j9cks](https://github.com/j9cks)) |
+| Mentor | Matthew Radice |
 
 Built at HackMT, January 31 – February 1, 2026.
+
+A big thank you to **Matthew Radice**, who came up with the idea for Pichamabob and mentored us
+through the weekend. He deliberately stepped back so the rest of us could own the project, and
+he was there with guidance whenever we got stuck, all while balancing his PhD work.
 
 ## About this repo
 
